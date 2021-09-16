@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/cart/cart",
+    "pages/detail/detail",
+    "pages/shopping/shopping",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#555",
+    "navigationBarTitleText": "茶喜",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#f00",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/首页.png",
+        "selectedIconPath": "images/首页选中.png"
+      },
+      {
+        "pagePath": "pages/shopping/shopping",
+        "text": "点单",
+        "iconPath": "images/奶茶.png",
+        "selectedIconPath": "images/奶茶选中.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "订单",
+        "iconPath": "images/购物车.png",
+        "selectedIconPath": "images/购物车选中.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "我的",
+        "iconPath": "images/个人.png",
+        "selectedIconPath": "images/个人选中.png"
+      }
+      
+      
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

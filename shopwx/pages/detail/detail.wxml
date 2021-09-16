@@ -1,0 +1,31 @@
+<image mode="aspectFill" src="{{api}}{{item.logo}}"></image>
+<text class="name">{{item.product}}</text>
+<view class="price">￥{{item.price}}</view>
+<view class="descript">{{item.descript}}</view>
+<view class="bt" style="position: relative; left: 0rpx; top: 80rpx; width: 750rpx; height: 511rpx; display: block; box-sizing: border-box">
+    <radio-group class="radio-group" bindchange="radioChange">
+        <label class="radio" wx:for="{{green}}">
+            <radio value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+        </label>
+    </radio-group>
+    <radio-group class="radio-group" bindchange="radioChange">
+        <label class="radio" wx:for="{{status}}">
+            <radio value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+        </label>
+    </radio-group>
+    <radio-group class="radio-group" bindchange="radioChange">
+        <label class="radio" wx:for="{{Imany}}">
+            <radio value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+        </label>
+    </radio-group>
+    <radio-group class="radio-group" bindchange="radioChange">
+        <label class="radio" wx:for="{{sweet}}">
+            <radio value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+        </label>
+    </radio-group>
+    <radio-group class="radio-group" bindchange="radioChange">
+        <label class="radio" wx:for="{{lemon}}">
+            <radio value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+        </label>
+    </radio-group>
+</view>

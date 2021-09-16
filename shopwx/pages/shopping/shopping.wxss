@@ -1,0 +1,40 @@
+/* 左侧定宽，右侧填充剩余宽度 */
+/* px像素的意思，rpx是适配手机像素,小程序所有单位都是用rpx */
+.contain{
+  overflow: hidden;
+  /* 清除浮动 */
+}
+.left{
+  float: left;
+  width: 170rpx;
+  background-color:whitesmoke;
+  /* background: red; */
+}
+.right{
+  overflow: hidden;/* 填充剩余宽度*/
+}
+.category{
+  width: 100%;
+  height: 75rpx;
+  line-height: 76rpx;/*height+线宽=line-height, 垂直居中*/
+  text-align: center;/*水平居中*/
+  border-bottom: 1rpx solid whitesmoke;
+}
+.active{
+  height: 70rpx;
+  font-weight: bold;
+  border-bottom: 6rpx solid white;
+  border-left: 8rpx solid orange;
+  background-color: white;
+}
+.product{
+  position: relative;/*把商品设置成参照物, 让里面的元素相对于参照物进行定位*/
+  overflow: hidden;/*容器清除浮动*/
+  padding: 15rpx; /*上下左右内边距*/
+  border-bottom: 1rpx solid #eee;
+}
+.group{
+  position: absolute;/*定位，他会去找参照物*/
+  top: 120rpx;
+  right: 15rpx;
+}

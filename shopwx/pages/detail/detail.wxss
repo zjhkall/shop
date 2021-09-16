@@ -1,0 +1,28 @@
+/* pages/datail/detail.wxss */
+.name{
+  font-weight: bold;
+  float: right;
+}
+.price{
+  font-weight: bold;
+  font-size:45rpx;
+}
+.descript{
+  font-size: 32rpx;
+  margin-top: 30rpx;
+}
+.radio-group{
+  font-size: 32rpx;
+  margin-top: 30rpx;
+  size: 32rpx;
+  float: left;
+}
+.radio{
+  transform:scale(0.0);
+  padding-left: 30rpx;
+}
+.choose{
+  margin-top: -20rpx;
+  background-color: whitesmoke;
+  font-size: 16rpx;
+}

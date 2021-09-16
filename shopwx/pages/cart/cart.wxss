@@ -1,0 +1,66 @@
+/* pages/cart/cart.wxss */
+.fee{
+  position: absolute;
+  top: 30rpx;
+  right: 15rpx;
+  font-size: 36rpx;
+}
+.wrapper{
+  overflow: hidden;
+  padding: 15rpx;
+}
+.total{
+  overflow: hidden;
+  line-height: 80rpx;
+  height: 80rpx; /*高度=行高 单行文字垂直居中*/
+  font-weight: bold;
+  color: red;
+  font-size: 42rpx;
+}
+.submit{
+  float: right;
+}
+.caotain{
+  padding: 15rpx;
+  border-bottom: 1rpx solid #eee;
+}
+.box{
+  margin-top: 16rpx;
+  overflow: hidden;
+}
+.label{
+  float: left;
+}
+.input{
+  overflow: hidden;
+}
+.person{
+  text-align: center;
+  font-weight: bold;
+}
+.head button{
+  width: 370rpx !important;
+}
+.head{
+  overflow: hidden;
+}
+.cButton{
+  float: left;
+}
+.hButton{
+  float: right;
+}
+.product{
+  position: relative;/*把商品设置成参照物, 让里面的元素相对于参照物进行定位*/
+  overflow: hidden;/*容器清除浮动*/
+  padding: 15rpx; /*上下左右内边距*/
+  border-bottom: 1rpx solid #eee;
+}
+.group{
+  position: absolute;/*定位，他会去找参照物*/
+  top: 120rpx;
+  right: 15rpx;
+}
+.first{
+  margin-top:36rpx ;
+}

@@ -1,0 +1,16 @@
+
+<view class="layout" style="width: 750rpx; height: 1069rpx; display: block; box-sizing: border-box; left: NaNrpx; top: NaNrpx" >
+<image  class="background" src="../../images/background.jpg"></image>
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}" wx:key="*this">
+      <swiper-item>
+        <image src="{{api}}{{item.logo}}" mode="aspectFill" class="slide-image" style="width: 750rpx; height: 340rpx; display: inline-block; box-sizing: border-box; left: NaNrpx; top: NaNrpx" height="150" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <button class="bt" bindtap="startPage" style="position: relative; left: 0rpx; top: 54rpx">
+      <image class="im" src="../../images/外卖.png" mode="aspectFit" ></image>
+      <text class="ds">无接触配送，惊喜到家</text>
+    </button>
+
+</view>

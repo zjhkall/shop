@@ -1,0 +1,26 @@
+<view style="width: 750rpx; height: 563rpx; display: block; box-sizing: border-box; left: NaNrpx; top: NaNrpx">
+  <image class="ad" src="../../images/ad.jpg" mode="aspectFill"></image>
+</view>
+<view class="contain">
+  <view class="left">
+    <view bindtap="clickCategory" data-item="{{item}}" class="{{item.id==cid?'category active':'category'}}" wx:for="{{category}}" wx:key="*this">{{item.category}}</view>
+
+  </view>
+  <view class="right">
+    <view bindtap="startPage" data-item="{{item}}" class="product" wx:for="{{product}}" wx:key="*this">
+      <image class="logo" src="{{api}}{{item.logo}}" mode="aspectFill"></image>
+      <view class="info">
+        <view class="title">{{item.product}}</view>
+        <view class="price">{{item.price}}￥/杯</view>
+        <view class="num">剩余{{item.num}}个</view>
+      </view>
+      <view class="group">
+        <image catchtap="addCart"  data-item="{{item}}" class="add" src="../../images/add.png"></image>
+        <view class="count">{{item.count}}</view>
+        <image catchtap="reduceCart"  data-item="{{item}}" class="reduce" src="../../images/reduce.png"></image>
+      </view>
+      
+    </view>
+
+  </view>
+</view>

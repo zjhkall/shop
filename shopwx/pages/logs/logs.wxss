@@ -1,0 +1,45 @@
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  border-bottom: 1rpx solid #eee;
+  /* color: #aaa; */
+  margin-top: 120rpx;
+}
+
+.userinfo-avatar {
+  /* overflow: hidden; */
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+.box{
+  overflow:hidden;
+}
+.label{
+  float: left;
+}
+.person1{
+font-size: large;
+}
+.person2{
+  font-size: small;
+  border-bottom: 1rpx solid #eee;
+  margin-top: 32rpx;
+}
+.person3{
+  font-size: large;
+  font-weight: bold;
+}
+.person{
+  border-bottom: 1rpx solid #eee;
+}
+button{
+  font-size: small;
+  margin: 0 auto;
+}

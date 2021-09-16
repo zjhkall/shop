@@ -1,0 +1,46 @@
+/**全局css样式**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+
+.logo{
+  margin-right: 15rpx; /*右外边距*/
+  width: 160rpx;
+  height: 160rpx;
+  float: left;/*左侧定宽，容器清除浮动*/
+}
+.info{
+  overflow: hidden;/*右侧文字填充剩余宽度*/
+}
+.title{
+  font-weight: bold;
+}
+.price{
+  margin-top: 10rpx;
+  font-size: 36rpx;
+}
+.num{
+  font-size: 36rpx;
+}
+/* 把垂直排列变成水平排列,要使用float */
+
+.add{
+  width: 50rpx;
+  height: 50rpx;
+  float: right;
+}
+.count{
+  float: right;
+  padding: 0 10rpx;
+}
+.reduce{
+  width: 50rpx;
+  height: 50rpx;
+  float: right;
+}

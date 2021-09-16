@@ -1,0 +1,27 @@
+
+<view class="contain">
+  <image src="../../images/back.jpg" mode="aspectFill"></image>
+  <view class="person1">Hey，<open-data type="userNickName"></open-data>
+  </view>
+  <view class="person2">STAY INSPIRED</view>
+</view>
+
+<view class="userinfo" style="width: 750rpx; height: 293rpx;">
+  <block wx:if="{{canIUseOpenData}}">
+    <view class="userinfo-avatar" bindtap="bindViewTap" style="position: relative; left: 547rpx; top: -45rpx">
+      <view class="person3"
+        style="width: 162rpx; height: 61rpx; position: relative; left: -530rpx; top: 61rpx; display: block; box-sizing: border-box">
+        GO会员</view>
+      <open-data type="userAvatarUrl"></open-data>
+
+    </view>
+  </block>
+  <block wx:elif="{{!hasUserInfo}}">
+    <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
+    <button wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <view wx:else> 请使用1.4.4及以上版本基础库 </view>
+  </block>
+  <block wx:else>
+    <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+  </block>
+</view>
